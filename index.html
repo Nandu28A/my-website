@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Word Finder Game - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎮 Word Finder Game</h1>
+
+        <h2>Welcome!</h2>
+
+        <input type="text" id="username" placeholder="Enter Your Name">
+
+        <br><br>
+
+        <button onclick="startGame()">Start Game</button>
+    </div>
+
+    <script>
+        function startGame() {
+
+            let name = document.getElementById("username").value;
+
+            if(name == ""){
+                alert("Please enter your name!");
+            }
+            else{
+                localStorage.setItem("playerName", name);
+
+                window.location.href = "level.html";
+            }
+        }
+    </script>
+
+</body>
+</html>
