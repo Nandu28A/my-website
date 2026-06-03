@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Final Score</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🎉 GAME OVER 🎉</h1>
+
+    <h2>Your Final Score</h2>
+
+    <h1 id="finalScore"></h1>
+
+    <h2 id="resultMessage"></h2>
+
+    <button onclick="playAgain()">Play Again</button>
+
+</div>
+
+<script>
+
+let score = localStorage.getItem("finalScore");
+
+document.getElementById("finalScore").innerHTML = score + " / 10";
+
+if(score >= 8){
+    document.getElementById("resultMessage").innerHTML =
+    "🌟 Excellent!";
+}
+else if(score >= 5){
+    document.getElementById("resultMessage").innerHTML =
+    "😊 Good Job!";
+}
+else{
+    document.getElementById("resultMessage").innerHTML =
+    "👍 Keep Practicing!";
+}
+
+function playAgain(){
+    window.location.href = "level.html";
+}
+
+</script>
+
+</body>
+</html>

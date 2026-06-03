@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select Level</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🎮 Word Finder Game</h1>
+
+    <h2>Select Difficulty Level</h2>
+
+    <button class="easy" onclick="chooseLevel('easy')">
+        🟢 Easy
+    </button>
+
+    <br><br>
+
+    <button class="medium" onclick="chooseLevel('medium')">
+        🟡 Medium
+    </button>
+
+    <br><br>
+
+    <button class="hard" onclick="chooseLevel('hard')">
+        🔴 Hard
+    </button>
+
+</div>
+
+<script>
+
+function chooseLevel(level){
+
+    localStorage.setItem("level", level);
+
+    window.location.href = "game.html";
+
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Word Finder Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🎮 Word Finder Game</h1>
+
+    <h2>Welcome, <span id="name"></span></h2>
+
+    <h3>Question <span id="questionNo">1</span> / 10</h3>
+
+    <h2>Find the Word</h2>
+
+    <h1 id="scrambledWord"></h1>
+
+    <input type="text" id="answer" placeholder="Enter your answer">
+
+    <br><br>
+
+    <button onclick="checkAnswer()">Submit</button>
+
+    <h3>⏰ Time Left: <span id="timer">15</span> sec</h3>
+
+    <h3>🏆 Score: <span id="score">0</span></h3>
+
+    <h3 id="message"></h3>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
