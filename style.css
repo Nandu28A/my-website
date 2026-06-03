@@ -1,5 +1,10 @@
 body{
-    background: linear-gradient(to right, #ffb6c1, #ffc0cb);
+    
+    min-height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center
+     linear-gradient(to right, #ffb6c1, #ffc0cb);
     font-family: Arial, sans-serif;
 }
 
@@ -15,14 +20,18 @@ body{
 
 h1{
     color: deeppink;
+    margin-bottom:10px;
+
 }
 
 h2{
     color: purple;
+    margin-bottom:10px;
 }
 
 h3{
     color: #444;
+    margin-bottom:10px 0;
 }
 
 input{
@@ -31,6 +40,7 @@ input{
     font-size: 16px;
     border-radius: 10px;
     border: 2px solid pink;
+    margin:10px 0;
 }
 
 button{
@@ -40,11 +50,14 @@ button{
     border: none;
     border-radius: 10px;
     font-size: 18px;
+    margin:8px;
     cursor: pointer;
+    transition:0.3s;
 }
 
 button:hover{
     background: deeppink;
+    transform:scale(1.05);
 }
 
 .easy{
@@ -62,4 +75,5 @@ button:hover{
 #message{
     color: blue;
     font-weight: bold;
+    margin-top: 10px;;
 }
