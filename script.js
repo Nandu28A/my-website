@@ -4,18 +4,18 @@ localStorage.getItem("playerName");
 let level = localStorage.getItem("level");
 
 let easyWords = [
-"apple","mango","kiwi","cycle","grape",
-"peach","summer","plum","pear","ups"
+"apple","mango","kiwi","cycle","rose",
+"water","summer","pen","book","ups"
 ];
 
 let mediumWords = [
-"banana","orange","volcano","cherry","coconut",
-"library","apricot","pumpkin","spinach","carrot"
+"banana","orange","flower","river","coconut",
+"library","friend","pumpkin","nine","carrot"
 ];
 
 let hardWords = [
-"internal","watermelon","strawberry","blueberry","raspberry",
-"blackberry","dragonfruit","pomegranate","cantaloupe","jackfruit"
+"internal","teacher","iceman","computer","machine",
+"library","dragonfruit","student","school","jackfruit"
 ];
 
 let words;
